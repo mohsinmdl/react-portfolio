@@ -3,3 +3,6 @@ React Component
 
 Class
 Inheritance
+
+State
+Never directly modify the state
