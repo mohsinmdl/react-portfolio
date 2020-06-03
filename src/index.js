@@ -3,17 +3,20 @@ import ReactDOM from 'react-dom';
 import { Router, Switch, Route } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 import App from './App';
+import Jokes from './Jokes'
 import './index.css';
+import Header from './components/Header'
 
 
-const history = new createBrowserHistory();
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
-    <Router>
+    <Router history={createBrowserHistory()}>
         <Switch>
-            <Route path='/' component={App}></Route>
-            <Route path='/jokes' component={App}></Route>
+            {/* <Route exact path='/' component={App}></Route>
+            <Route path='/jokes' component={Jokes}></Route> */}
+            <Route exact path='/' render={() => <Header Component={App}/>}></Route>
+            <Route path='/jokes' render={() => <Header Component={Jokes}/>}></Route>
         </Switch>
     </Router>,
     document.getElementById('root')
