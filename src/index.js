@@ -1,9 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Switch, Route } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
 import App from './App';
 import './index.css';
-    
-ReactDOM.render(<App />, document.getElementById('root'));
+
+
+const history = new createBrowserHistory();
+
+// ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <Router>
+        <Switch>
+            <Route path='/' component={App}></Route>
+            <Route path='/jokes' component={App}></Route>
+        </Switch>
+    </Router>,
+    document.getElementById('root')
+);
 
 
 // class Animal {

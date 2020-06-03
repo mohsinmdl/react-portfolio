@@ -1,13 +1,42 @@
 
-## Topics
-Component
-State
-Props
+Respected Sir, 
+A.a.w.w.
 
-Class
-Inheritance
+These are the topics that I have learned today:
 
-## What I have learned
-Never directly modify the state
+# Topics
 
-## Built a portfolio site with React
+- Component
+- State
+- Props
+
+- Classes
+- Inheritance
+
+## Portfolio Site
+I have built a portfolio site with React implementing the obove topics which gave me hand on practice.
+
+
+## Understadnin Bundler Transpiler
+## Main Concepts
+
+
+React Lifecyle methods
+Componentdidmount
+Componentwillunmount
+
+Fetch methods
+## Promises 
+wait for async calls
+1. resolve
+2. reject 
+    catch
+
+## Routes
+
+npm i react-router-dom@4.3.1 --save
+import {Router, Switch, Route} from 'react-router-dom';
+
+npm i history@4.7.2 --save
+
+
